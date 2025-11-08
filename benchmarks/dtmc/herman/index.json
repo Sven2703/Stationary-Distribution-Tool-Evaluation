@@ -1,0 +1,259 @@
+{
+	"name": "Randomised Self-Stabilising Algorithm of Herman",
+	"stationary-category": "mixed", "evt-category": "cyclic",
+	"short": "herman",
+	"type": "dtmc",
+	"original": "PRISM",
+	"version": 1,
+	"date": "2018-10-11",
+	"version-history": [
+		{
+			"date": "2018-10-11",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": "Ted Herman <ted-herman@uiowa.edu>",
+	"submitter": "Michaela Klauck <klauck@depend.uni-saarland.de>",
+	"source": "https://doi.org/10.1016/0020-0190(90)90107-9",
+	"part-of": {
+		"name": "the PRISM Benchmark Suite",
+		"url": "http://www.prismmodelchecker.org/benchmarks/"
+	},
+	"description": "This is a PRISM case study [1]. A self-stabilising protocol for a network of `N´ processes (ring of identical processes) is a protocol which, when started from some possibly illegal start configuration, returns to a legal/stable configuration without any outside intervention within some finite number of steps. The stable configurations are those where there is exactly one process designated as privileged (has a token). This privilege should be passed around the ring forever in a fair manner. In Herman's version [0] the protocol operates synchronously, the ring is oriented, the number of processes must be odd and communication is unidirectional in the ring",
+	"references": [
+		"https://doi.org/10.1109/QEST.2012.14",
+		"http://www.prismmodelchecker.org/casestudies/self-stabilisation.php"
+	],
+	"notes": "PRISM benchmark",
+	"parameters": [
+		{
+			"name": "N",
+			"kind": "file",
+			"description": "Number of processes",
+			"type": "positive odd integer"
+		}
+	],
+	"files": [
+		{
+			"original-file": [
+				"herman.3.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 3
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 8
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.5.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 5
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 32
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.7.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 7
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 128
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.9.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 9
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 512
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.11.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 11
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 2048
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.13.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 13
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 8192
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.15.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 15
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 32768
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.17.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 17
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 131072
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.19.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 19
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 524288
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"herman.21.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 21
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 2097152
+						}
+					]
+				}
+			]
+		}
+	]
+}

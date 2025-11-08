@@ -1,0 +1,344 @@
+{
+	"name": "Crowds Protocol",
+	"stationary-category": "singleton-recurrent", "evt-category": "cyclic",
+	"short": "crowds",
+	"type": "dtmc",
+	"original": "PRISM",
+	"version": 1,
+	"date": "2018-10-11",
+	"version-history": [
+		{
+			"date": "2018-10-11",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": [
+		"Michael K. Reiter <reiter@research.bell-labs.com>",
+		"Aviel D. Rubin <rubin@research.att.com>"
+	],
+	"submitter": "Michaela Klauck <klauck@depend.uni-saarland.de>",
+	"source": "https://doi.org/10.1145/290163.290168",
+	"part-of": {
+		"name": "the PRISM Benchmark Suite",
+		"url": "http://www.prismmodelchecker.org/benchmarks/"
+	},
+	"description": "This PRISM case study [1] provides a mechanism for anonymous Web browsing. The goal is to hide each user's communications by routing them randomly within a group of `N = CrowdSize/(1-badC)´ users, where `CrowdSize´ is the number of honest users and `badC´ the proprotion of corrupt members. With probability `pf´ (forwarding probability), the protocol selects a crowd member at random as the next router in the path, and forwards the message to it, re-encrypted with the appropriate pairwise key. The next router then repeats this step. `TotalRuns´ is the number of different paths to be analyzed. See [2] for more details",
+	"references": [
+		"https://doi.org/10.1109/QEST.2012.14",
+		"http://www.prismmodelchecker.org/casestudies/crowds.php"
+	],
+	"notes": "PRISM benchmark",
+	"parameters": [
+		{
+			"name": "TotalRuns",
+			"kind": "open",
+			"description": "Number of protocol runs",
+			"type": "positive integer"
+		},
+		{
+			"name": "CrowdSize",
+			"kind": "open",
+			"description": "Number of good crowd members",
+			"type": "in {5,10,15,20}"
+		}
+	],
+	"files": [
+		{
+			"original-file": [
+				"crowds.prism"
+			],
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 3
+						},
+						{
+							"name": "CrowdSize",
+							"value": 5
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1145
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 4
+						},
+						{
+							"name": "CrowdSize",
+							"value": 5
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 3190
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 5
+						},
+						{
+							"name": "CrowdSize",
+							"value": 5
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 7421
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 6
+						},
+						{
+							"name": "CrowdSize",
+							"value": 5
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 15233
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 3
+						},
+						{
+							"name": "CrowdSize",
+							"value": 10
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 6460
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 4
+						},
+						{
+							"name": "CrowdSize",
+							"value": 10
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 28975
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 5
+						},
+						{
+							"name": "CrowdSize",
+							"value": 10
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 104512
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 6
+						},
+						{
+							"name": "CrowdSize",
+							"value": 10
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 321751
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 3
+						},
+						{
+							"name": "CrowdSize",
+							"value": 15
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 19075
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 4
+						},
+						{
+							"name": "CrowdSize",
+							"value": 15
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 117485
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 5
+						},
+						{
+							"name": "CrowdSize",
+							"value": 15
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 572153
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 6
+						},
+						{
+							"name": "CrowdSize",
+							"value": 15
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 2341309
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 3
+						},
+						{
+							"name": "CrowdSize",
+							"value": 20
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 42115
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 4
+						},
+						{
+							"name": "CrowdSize",
+							"value": 20
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 329470
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 5
+						},
+						{
+							"name": "CrowdSize",
+							"value": 20
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 2061951
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "TotalRuns",
+							"value": 6
+						},
+						{
+							"name": "CrowdSize",
+							"value": 20
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 10633591
+						}
+					]
+				}
+			]
+		}
+	]
+}

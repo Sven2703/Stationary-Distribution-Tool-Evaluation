@@ -1,0 +1,17 @@
+Starting benchmarking.
+------------------------------------------------------------
+SLURM JOB NAME: majority
+SLURM JOB ID: 61739098
+Running on nodes: n23m0170
+Number of CPUs: 1
+Started at Fri Oct 17 02:06:24 PM CEST 2025
+------------------------------------------------------------
+Loaded 19 invocations.
+
+Checking invocations: [                                                  ] 0/19 Checking invocations: [##################################################] 19/19 
+
+Executing invocations: [                                                  ] 0/19 Executing invocations: [#####                                             ] 2/19 Executing invocations: [#######                                           ] 3/19 Executing invocations: [##########                                        ] 4/19 Executing invocations: [#############                                     ] 5/19 Executing invocations: [###############                                   ] 6/19 Executing invocations: [##################                                ] 7/19 Executing invocations: [#####################                             ] 8/19 Executing invocations: [#######################                           ] 9/19 Executing invocations: [##########################                        ] 10/19 Executing invocations: [############################                      ] 11/19 Executing invocations: [###############################                   ] 12/19 Executing invocations: [##################################                ] 13/19 Executing invocations: [####################################              ] 14/19 Executing invocations: [#######################################           ] 15/19 Executing invocations: [##########################################        ] 16/19 Executing invocations: [############################################      ] 17/19 Executing invocations: [###############################################   ] 18/19 Executing invocations: [##################################################] 19/19 ------------------------------------------------------------
+Finishing at Fri Oct 17 04:26:04 PM CEST 2025
+final spent time is 02:19:40
+------------------------------------------------------------
+slurmstepd: error: Detected 6 oom-kill event(s) in StepId=61739098.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

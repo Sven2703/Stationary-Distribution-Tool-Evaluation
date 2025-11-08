@@ -1,0 +1,13 @@
+// Fast Dice Roller Algorithm for uniform random sampling using coin flips [J. Lumbroso, arXiv:1304.1916, 2013]
+// The given encoding is based on a transformation to a probabilistic program by Daniel Zilken
+
+dtmc
+const int N; // N > 0, the algorithm samples uniformly from {0, ..., N-1}
+formula decrHeads = 2*c >= N ? N : 0;
+formula decrTails = 2*c+1 >= N ? N : 0;
+module main
+    v : [0..N] init 1;
+    c : [0..N] init 0;
+    [] v<N -> 0.5 : (v' =min(N,2*v-decrHeads)) & (c'=2*c-decrHeads) + 0.5 : (v' =min(N,2*v-decrTails)) & (c'=2*c+1-decrTails);
+    [] v=N -> 1 : true;
+endmodule

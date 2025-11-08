@@ -1,0 +1,191 @@
+{
+	"name": "Flexible Manufacturing System",
+	"stationary-category": "fully-recurrent", "evt-category": "no-transient",
+	"short": "fms",
+	"type": "ctmc",
+	"original": "PRISM",
+	"version": 1,
+	"date": "2018-10-11",
+	"version-history": [
+		{
+			"date": "2018-10-11",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": [
+		"Gianfranco Ciardo <ciardo@iastate.edu>",
+		"Kishor S.Trivedi <kst@ee.duke.edu>"
+	],
+	"submitter": "Tim Quatmann <tim.quatmann@cs.rwth-aachen.de>",
+	"source": "https://doi.org/10.1016/0166-5316(93)90026-Q",
+	"part-of": {
+		"name": "the PRISM Benchmark Suite",
+		"url": "http://www.prismmodelchecker.org/benchmarks/"
+	},
+	"description": "This PRISM case study [1] describes a system of three machines which process `n´ parts and assemble them together as described in [0]. In the end the throughput is measured. See [2] for more details",
+	"references": [
+		"https://doi.org/10.1109/QEST.2012.14",
+		"http://www.prismmodelchecker.org/casestudies/fms.php"
+	],
+	"notes": "PRISM benchmark",
+	"parameters": [
+		{
+			"name": "n",
+			"kind": "open",
+			"description": "Maximum number of parts per machine",
+			"type": "positive integer"
+		}
+	],
+
+	"files": [
+		{
+			"original-file": [
+				"fms.prism"
+			],
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 1
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 54
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 2
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 810
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 3
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 6520
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 4
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 35910
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 5
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 152712
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 6
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 537768
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 7
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1639440
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 8
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 4459455
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 9
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 11058190
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "n",
+							"value": 10
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 25397658
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This project file has been saved by the New GreatSPN Editor, v.100 --><project name="philosophers" version="121">
+  <gspn name="philosophers16" show-color-cmd="false" show-fluid-cmd="false">
+    <nodes>
+      <place marking="1" name="fork1" x="20.0" y="1.0"/>
+      <place marking="1" name="think1" x="12.0" y="6.0"/>
+      <place name="wait1" x="2.0" y="6.0"/>
+      <place name="eat1" x="7.0" y="12.0"/>
+      <transition delay="mu" name="first1" nservers-x="0.5" type="EXP" x="7.55" y="6.0"/>
+      <constant consttype="REAL" name="mu" value="1" x="1.125" y="1.0"/>
+      <transition delay="rho" name="second1" nservers-x="0.5" type="EXP" x="2.55" y="12.0"/>
+      <constant consttype="REAL" name="lambda" value="1" x="1.25" y="3.0"/>
+      <transition delay="lambda" name="done1" nservers-x="0.5" type="EXP" x="12.55" y="12.0"/>
+      <constant consttype="REAL" name="rho" value="1" x="1.3125" y="2.0"/>
+      <place marking="1" name="think2" x="12.0" y="20.0"/>
+      <place name="wait2" x="2.0" y="20.0"/>
+      <place name="eat2" x="7.0" y="26.0"/>
+      <transition delay="mu" name="first2" nservers-x="0.5" type="EXP" x="7.55" y="20.0"/>
+      <transition delay="rho" name="second2" nservers-x="0.5" type="EXP" x="2.55" y="26.0"/>
+      <transition delay="lambda" name="done2" nservers-x="0.5" type="EXP" x="12.55" y="26.0"/>
+      <place marking="1" name="think3" x="12.0" y="34.0"/>
+      <place name="wait3" x="2.0" y="34.0"/>
+      <place name="eat3" x="7.0" y="40.0"/>
+      <transition delay="mu" name="first3" nservers-x="0.5" type="EXP" x="7.55" y="34.0"/>
+      <transition delay="rho" name="second3" nservers-x="0.5" type="EXP" x="2.55" y="40.0"/>
+      <transition delay="lambda" name="done3" nservers-x="0.5" type="EXP" x="12.55" y="40.0"/>
+      <place marking="1" name="fork2" x="20.0" y="16.0"/>
+      <place marking="1" name="fork3" x="20.0" y="31.0"/>
+      <place marking="1" name="think4" x="12.0" y="47.0"/>
+      <place name="wait4" x="2.0" y="47.0"/>
+      <place name="eat4" x="7.0" y="53.0"/>
+      <transition delay="mu" name="firt4" nservers-x="0.5" type="EXP" x="7.55" y="47.0"/>
+      <transition delay="rho" name="second4" nservers-x="0.5" type="EXP" x="2.55" y="53.0"/>
+      <transition delay="lambda" name="done4" nservers-x="0.5" type="EXP" x="12.55" y="53.0"/>
+      <place marking="1" name="fork4" x="20.0" y="44.0"/>
+      <place marking="1" name="fork5" x="20.0" y="57.0"/>
+      <place marking="1" name="think5" x="12.0" y="59.0"/>
+      <place name="wait5" x="2.0" y="59.0"/>
+      <place name="eat5" x="7.0" y="65.0"/>
+      <transition delay="mu" name="first5" nservers-x="0.5" type="EXP" x="7.55" y="59.0"/>
+      <transition delay="rho" name="second5" nservers-x="0.5" type="EXP" x="2.55" y="65.0"/>
+      <transition delay="lambda" name="done5" nservers-x="0.5" type="EXP" x="12.55" y="65.0"/>
+      <place marking="1" name="think6" x="12.0" y="73.0"/>
+      <place name="wait6" x="2.0" y="73.0"/>
+      <place name="eat6" x="7.0" y="79.0"/>
+      <transition delay="mu" name="first6" nservers-x="0.5" type="EXP" x="7.55" y="73.0"/>
+      <transition delay="rho" name="second6" nservers-x="0.5" type="EXP" x="2.55" y="79.0"/>
+      <transition delay="lambda" name="done6" nservers-x="0.5" type="EXP" x="12.55" y="79.0"/>
+      <place marking="1" name="think7" x="12.0" y="87.0"/>
+      <place name="wait7" x="2.0" y="87.0"/>
+      <place name="eat7" x="7.0" y="93.0"/>
+      <transition delay="mu" name="first7" nservers-x="0.5" type="EXP" x="7.55" y="87.0"/>
+      <transition delay="rho" name="second7" nservers-x="0.5" type="EXP" x="2.55" y="93.0"/>
+      <transition delay="lambda" name="done7" nservers-x="0.5" type="EXP" x="12.55" y="93.0"/>
+      <place marking="1" name="fork6" x="20.0" y="69.0"/>
+      <place marking="1" name="fork7" x="20.0" y="84.0"/>
+      <place marking="1" name="think8" x="12.0" y="100.0"/>
+      <place name="wait8" x="2.0" y="100.0"/>
+      <place name="eat8" x="7.0" y="106.0"/>
+      <transition delay="mu" name="first8" nservers-x="0.5" type="EXP" x="7.55" y="100.0"/>
+      <transition delay="rho" name="second8" nservers-x="0.5" type="EXP" x="2.55" y="106.0"/>
+      <transition delay="lambda" name="done8" nservers-x="0.5" type="EXP" x="12.55" y="106.0"/>
+      <place marking="1" name="fork8" x="20.0" y="97.0"/>
+      <place marking="1" name="fork9" x="20.0" y="111.0"/>
+      <place marking="1" name="think9" x="12.0" y="113.0"/>
+      <place name="wait9" x="2.0" y="113.0"/>
+      <place name="eat9" x="7.0" y="119.0"/>
+      <transition delay="mu" name="first9" nservers-x="0.5" type="EXP" x="7.55" y="113.0"/>
+      <transition delay="rho" name="second9" nservers-x="0.5" type="EXP" x="2.55" y="119.0"/>
+      <transition delay="lambda" name="done9" nservers-x="0.5" type="EXP" x="12.55" y="119.0"/>
+      <place marking="1" name="think10" x="12.0" y="127.0"/>
+      <place name="wait10" x="2.0" y="127.0"/>
+      <place name="eat10" x="7.0" y="133.0"/>
+      <transition delay="mu" name="first10" nservers-x="0.5" type="EXP" x="7.55" y="127.0"/>
+      <transition delay="rho" name="second10" nservers-x="0.5" type="EXP" x="2.55" y="133.0"/>
+      <transition delay="lambda" name="done10" nservers-x="0.5" type="EXP" x="12.55" y="133.0"/>
+      <place marking="1" name="think11" x="12.0" y="141.0"/>
+      <place name="wait11" x="2.0" y="141.0"/>
+      <place name="eat11" x="7.0" y="147.0"/>
+      <transition delay="mu" name="first11" nservers-x="0.5" type="EXP" x="7.55" y="141.0"/>
+      <transition delay="rho" name="second11" nservers-x="0.5" type="EXP" x="2.55" y="147.0"/>
+      <transition delay="lambda" name="done11" nservers-x="0.5" type="EXP" x="12.55" y="147.0"/>
+      <place marking="1" name="fork10" x="20.0" y="123.0"/>
+      <place marking="1" name="fork11" x="20.0" y="138.0"/>
+      <place marking="1" name="think12" x="12.0" y="154.0"/>
+      <place name="wait12" x="2.0" y="154.0"/>
+      <place name="eat12" x="7.0" y="160.0"/>
+      <transition delay="mu" name="first12" nservers-x="0.5" type="EXP" x="7.55" y="154.0"/>
+      <transition delay="rho" name="second12" nservers-x="0.5" type="EXP" x="2.55" y="160.0"/>
+      <transition delay="lambda" name="done12" nservers-x="0.5" type="EXP" x="12.55" y="160.0"/>
+      <place marking="1" name="fork12" x="20.0" y="151.0"/>
+      <place marking="1" name="think13" x="12.0" y="170.0"/>
+      <place name="wait13" x="2.0" y="170.0"/>
+      <place name="eat13" x="7.0" y="176.0"/>
+      <transition delay="mu" name="first13" nservers-x="0.5" type="EXP" x="7.55" y="170.0"/>
+      <transition delay="rho" name="second13" nservers-x="0.5" type="EXP" x="2.55" y="176.0"/>
+      <transition delay="lambda" name="done13" nservers-x="0.5" type="EXP" x="12.55" y="176.0"/>
+      <place marking="1" name="fork13" x="20.0" y="167.0"/>
+      <place marking="1" name="fork14" x="20.0" y="180.0"/>
+      <place marking="1" name="think14" x="12.0" y="182.0"/>
+      <place name="wait14" x="2.0" y="182.0"/>
+      <place name="eat14" x="7.0" y="188.0"/>
+      <transition delay="mu" name="first14" nservers-x="0.5" type="EXP" x="7.55" y="182.0"/>
+      <transition delay="rho" name="second14" nservers-x="0.5" type="EXP" x="2.55" y="188.0"/>
+      <transition delay="lambda" name="done14" nservers-x="0.5" type="EXP" x="12.55" y="188.0"/>
+      <place marking="1" name="think15" x="12.0" y="196.0"/>
+      <place name="wait15" x="2.0" y="196.0"/>
+      <place name="eat15" x="7.0" y="202.0"/>
+      <transition delay="mu" name="first15" nservers-x="0.5" type="EXP" x="7.55" y="196.0"/>
+      <transition delay="rho" name="second15" nservers-x="0.5" type="EXP" x="2.55" y="202.0"/>
+      <transition delay="lambda" name="done15" nservers-x="0.5" type="EXP" x="12.55" y="202.0"/>
+      <place marking="1" name="think16" x="12.0" y="210.0"/>
+      <place name="wait16" x="2.0" y="210.0"/>
+      <place name="eat16" x="7.0" y="216.0"/>
+      <transition delay="mu" name="first16" nservers-x="0.5" type="EXP" x="7.55" y="210.0"/>
+      <transition delay="rho" name="second16" nservers-x="0.5" type="EXP" x="2.55" y="216.0"/>
+      <transition delay="lambda" name="done16" nservers-x="0.5" type="EXP" x="12.55" y="216.0"/>
+      <place marking="1" name="fork15" x="20.0" y="192.0"/>
+      <place marking="1" name="fork16" x="20.0" y="207.0"/>
+    </nodes>
+    <edges>
+      <arc head="first1" kind="INPUT" tail="think1"/>
+      <arc head="wait1" kind="OUTPUT" tail="first1"/>
+      <arc head="second1" kind="INPUT" tail="wait1"/>
+      <arc head="eat1" kind="OUTPUT" tail="second1"/>
+      <arc head="done1" kind="INPUT" tail="eat1"/>
+      <arc head="think1" kind="OUTPUT" tail="done1"/>
+      <arc head="wait2" kind="OUTPUT" tail="first2"/>
+      <arc head="second2" kind="INPUT" tail="wait2"/>
+      <arc head="eat2" kind="OUTPUT" tail="second2"/>
+      <arc head="done2" kind="INPUT" tail="eat2"/>
+      <arc head="think2" kind="OUTPUT" tail="done2"/>
+      <arc head="first2" kind="INPUT" tail="think2"/>
+      <arc head="wait3" kind="OUTPUT" tail="first3"/>
+      <arc head="second3" kind="INPUT" tail="wait3"/>
+      <arc head="eat3" kind="OUTPUT" tail="second3"/>
+      <arc head="done3" kind="INPUT" tail="eat3"/>
+      <arc head="think3" kind="OUTPUT" tail="done3"/>
+      <arc head="first3" kind="INPUT" tail="think3"/>
+      <arc head="first1" kind="INPUT" tail="fork2"/>
+      <arc head="second1" kind="INPUT" tail="fork1"/>
+      <arc head="fork1" kind="OUTPUT" tail="done1"/>
+      <arc head="fork2" kind="OUTPUT" tail="done1"/>
+      <arc head="first2" kind="INPUT" tail="fork2"/>
+      <arc head="second2" kind="INPUT" tail="fork3"/>
+      <arc head="fork2" kind="OUTPUT" tail="done2"/>
+      <arc head="fork3" kind="OUTPUT" tail="done2"/>
+      <arc head="first3" kind="INPUT" tail="fork3"/>
+      <arc head="fork3" kind="OUTPUT" tail="done3"/>
+      <arc head="wait4" kind="OUTPUT" tail="firt4"/>
+      <arc head="second4" kind="INPUT" tail="wait4"/>
+      <arc head="eat4" kind="OUTPUT" tail="second4"/>
+      <arc head="done4" kind="INPUT" tail="eat4"/>
+      <arc head="think4" kind="OUTPUT" tail="done4"/>
+      <arc head="firt4" kind="INPUT" tail="think4"/>
+      <arc head="firt4" kind="INPUT" tail="fork4"/>
+      <arc head="fork4" kind="OUTPUT" tail="done4"/>
+      <arc head="second3" kind="INPUT" tail="fork4"/>
+      <arc head="fork4" kind="OUTPUT" tail="done3"/>
+      <arc head="first5" kind="INPUT" tail="think5"/>
+      <arc head="wait5" kind="OUTPUT" tail="first5"/>
+      <arc head="second5" kind="INPUT" tail="wait5"/>
+      <arc head="eat5" kind="OUTPUT" tail="second5"/>
+      <arc head="done5" kind="INPUT" tail="eat5"/>
+      <arc head="think5" kind="OUTPUT" tail="done5"/>
+      <arc head="wait6" kind="OUTPUT" tail="first6"/>
+      <arc head="second6" kind="INPUT" tail="wait6"/>
+      <arc head="eat6" kind="OUTPUT" tail="second6"/>
+      <arc head="done6" kind="INPUT" tail="eat6"/>
+      <arc head="think6" kind="OUTPUT" tail="done6"/>
+      <arc head="first6" kind="INPUT" tail="think6"/>
+      <arc head="wait7" kind="OUTPUT" tail="first7"/>
+      <arc head="second7" kind="INPUT" tail="wait7"/>
+      <arc head="eat7" kind="OUTPUT" tail="second7"/>
+      <arc head="done7" kind="INPUT" tail="eat7"/>
+      <arc head="think7" kind="OUTPUT" tail="done7"/>
+      <arc head="first7" kind="INPUT" tail="think7"/>
+      <arc head="second5" kind="INPUT" tail="fork6"/>
+      <arc head="first5" kind="INPUT" tail="fork5"/>
+      <arc head="fork5" kind="OUTPUT" tail="done5"/>
+      <arc head="fork6" kind="OUTPUT" tail="done5"/>
+      <arc head="first6" kind="INPUT" tail="fork6"/>
+      <arc head="second6" kind="INPUT" tail="fork7"/>
+      <arc head="fork6" kind="OUTPUT" tail="done6"/>
+      <arc head="fork7" kind="OUTPUT" tail="done6"/>
+      <arc head="first7" kind="INPUT" tail="fork7"/>
+      <arc head="fork7" kind="OUTPUT" tail="done7"/>
+      <arc head="wait8" kind="OUTPUT" tail="first8"/>
+      <arc head="second8" kind="INPUT" tail="wait8"/>
+      <arc head="eat8" kind="OUTPUT" tail="second8"/>
+      <arc head="done8" kind="INPUT" tail="eat8"/>
+      <arc head="think8" kind="OUTPUT" tail="done8"/>
+      <arc head="first8" kind="INPUT" tail="think8"/>
+      <arc head="first8" kind="INPUT" tail="fork8"/>
+      <arc head="fork8" kind="OUTPUT" tail="done8"/>
+      <arc head="second7" kind="INPUT" tail="fork8"/>
+      <arc head="fork8" kind="OUTPUT" tail="done7"/>
+      <arc head="second4" kind="INPUT" tail="fork5"/>
+      <arc head="fork5" kind="OUTPUT" tail="done4"/>
+      <arc head="first9" kind="INPUT" tail="think9"/>
+      <arc head="wait9" kind="OUTPUT" tail="first9"/>
+      <arc head="second9" kind="INPUT" tail="wait9"/>
+      <arc head="eat9" kind="OUTPUT" tail="second9"/>
+      <arc head="done9" kind="INPUT" tail="eat9"/>
+      <arc head="think9" kind="OUTPUT" tail="done9"/>
+      <arc head="wait10" kind="OUTPUT" tail="first10"/>
+      <arc head="second10" kind="INPUT" tail="wait10"/>
+      <arc head="eat10" kind="OUTPUT" tail="second10"/>
+      <arc head="done10" kind="INPUT" tail="eat10"/>
+      <arc head="think10" kind="OUTPUT" tail="done10"/>
+      <arc head="first10" kind="INPUT" tail="think10"/>
+      <arc head="wait11" kind="OUTPUT" tail="first11"/>
+      <arc head="second11" kind="INPUT" tail="wait11"/>
+      <arc head="eat11" kind="OUTPUT" tail="second11"/>
+      <arc head="done11" kind="INPUT" tail="eat11"/>
+      <arc head="think11" kind="OUTPUT" tail="done11"/>
+      <arc head="first11" kind="INPUT" tail="think11"/>
+      <arc head="second9" kind="INPUT" tail="fork10"/>
+      <arc head="first9" kind="INPUT" tail="fork9"/>
+      <arc head="fork9" kind="OUTPUT" tail="done9"/>
+      <arc head="fork10" kind="OUTPUT" tail="done9"/>
+      <arc head="first10" kind="INPUT" tail="fork10"/>
+      <arc head="second10" kind="INPUT" tail="fork11"/>
+      <arc head="fork10" kind="OUTPUT" tail="done10"/>
+      <arc head="fork11" kind="OUTPUT" tail="done10"/>
+      <arc head="first11" kind="INPUT" tail="fork11"/>
+      <arc head="fork11" kind="OUTPUT" tail="done11"/>
+      <arc head="wait12" kind="OUTPUT" tail="first12"/>
+      <arc head="second12" kind="INPUT" tail="wait12"/>
+      <arc head="eat12" kind="OUTPUT" tail="second12"/>
+      <arc head="done12" kind="INPUT" tail="eat12"/>
+      <arc head="think12" kind="OUTPUT" tail="done12"/>
+      <arc head="first12" kind="INPUT" tail="think12"/>
+      <arc head="first12" kind="INPUT" tail="fork12"/>
+      <arc head="fork12" kind="OUTPUT" tail="done12"/>
+      <arc head="second11" kind="INPUT" tail="fork12"/>
+      <arc head="fork12" kind="OUTPUT" tail="done11"/>
+      <arc head="second8" kind="INPUT" tail="fork9"/>
+      <arc head="fork9" kind="OUTPUT" tail="done8"/>
+      <arc head="second16" kind="INPUT" tail="fork1"/>
+      <arc head="fork1" kind="OUTPUT" tail="done16"/>
+      <arc head="wait13" kind="OUTPUT" tail="first13"/>
+      <arc head="second13" kind="INPUT" tail="wait13"/>
+      <arc head="eat13" kind="OUTPUT" tail="second13"/>
+      <arc head="done13" kind="INPUT" tail="eat13"/>
+      <arc head="think13" kind="OUTPUT" tail="done13"/>
+      <arc head="first13" kind="INPUT" tail="think13"/>
+      <arc head="first13" kind="INPUT" tail="fork13"/>
+      <arc head="fork13" kind="OUTPUT" tail="done13"/>
+      <arc head="second12" kind="INPUT" tail="fork13"/>
+      <arc head="fork13" kind="OUTPUT" tail="done12"/>
+      <arc head="first14" kind="INPUT" tail="think14"/>
+      <arc head="wait14" kind="OUTPUT" tail="first14"/>
+      <arc head="second14" kind="INPUT" tail="wait14"/>
+      <arc head="eat14" kind="OUTPUT" tail="second14"/>
+      <arc head="done14" kind="INPUT" tail="eat14"/>
+      <arc head="think14" kind="OUTPUT" tail="done14"/>
+      <arc head="wait15" kind="OUTPUT" tail="first15"/>
+      <arc head="second15" kind="INPUT" tail="wait15"/>
+      <arc head="eat15" kind="OUTPUT" tail="second15"/>
+      <arc head="done15" kind="INPUT" tail="eat15"/>
+      <arc head="think15" kind="OUTPUT" tail="done15"/>
+      <arc head="first15" kind="INPUT" tail="think15"/>
+      <arc head="wait16" kind="OUTPUT" tail="first16"/>
+      <arc head="second16" kind="INPUT" tail="wait16"/>
+      <arc head="eat16" kind="OUTPUT" tail="second16"/>
+      <arc head="done16" kind="INPUT" tail="eat16"/>
+      <arc head="think16" kind="OUTPUT" tail="done16"/>
+      <arc head="first16" kind="INPUT" tail="think16"/>
+      <arc head="second14" kind="INPUT" tail="fork15"/>
+      <arc head="first14" kind="INPUT" tail="fork14"/>
+      <arc head="fork14" kind="OUTPUT" tail="done14"/>
+      <arc head="fork15" kind="OUTPUT" tail="done14"/>
+      <arc head="first15" kind="INPUT" tail="fork15"/>
+      <arc head="second15" kind="INPUT" tail="fork16"/>
+      <arc head="fork15" kind="OUTPUT" tail="done15"/>
+      <arc head="fork16" kind="OUTPUT" tail="done15"/>
+      <arc head="first16" kind="INPUT" tail="fork16"/>
+      <arc head="fork16" kind="OUTPUT" tail="done16"/>
+      <arc head="second13" kind="INPUT" tail="fork14"/>
+      <arc head="fork14" kind="OUTPUT" tail="done13"/>
+    </edges>
+  </gspn>
+</project>

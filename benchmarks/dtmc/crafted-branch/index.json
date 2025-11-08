@@ -1,0 +1,133 @@
+{
+	"name": "Crafted-Branch",
+	"stationary-category": "mixed", "evt-category": "acyclic",
+	"short": "crafted-branch",
+	"type": "dtmc",
+	"original": "PRISM",
+	"version": 1,
+    "references": [
+      "https://github.com/incaseoftrouble/stationary-distribution-sampling/tree/master",
+      "https://link.springer.com/chapter/10.1007/978-3-031-30823-9_25"
+      ],
+    "parameters": [
+		{
+			"name": "p",
+			"kind": "open",
+			"description": "Probability",
+			"type": "double"
+		},
+		{
+			"name": "steps",
+			"kind": "open",
+			"description": "Number of steps",
+			"type": "positive integer"
+		},
+		{
+			"name": "levels",
+			"kind": "open",
+			"description": "Number of levels",
+			"type": "positive integer"
+        },
+		{
+			"name": "loops",
+			"kind": "open",
+			"description": "Number of loops",
+			"type": "positive integer"
+		}
+	],
+    "files": [
+		{
+			"converted-file": "crafted-branch.jani",
+			"original-file": [
+				"crafted-branch.pm"
+			],
+			"conversion": {
+				"tool": "Storm-conv",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-conv --prism branch.pm --tojani branch.jani --globalvars"
+			},
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{
+					"values": [
+						{
+							"name": "p",
+							"value": 0.001
+						},
+						{
+							"name": "steps",
+							"value": 20
+						},
+						{
+							"name": "levels",
+							"value": 1000
+						},
+						{
+							"name": "loops",
+							"value": 100
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 107079
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "p",
+							"value": 0.001
+						},
+						{
+							"name": "steps",
+							"value": 20
+						},
+						{
+							"name": "levels",
+							"value": 1000
+						},
+						{
+							"name": "loops",
+							"value": 1000
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1007079
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "p",
+							"value": 0.001
+						},
+						{
+							"name": "steps",
+							"value": 20
+						},
+						{
+							"name": "levels",
+							"value": 1000
+						},
+						{
+							"name": "loops",
+							"value": 10000
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 10007079
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,4 @@
+"time_p1_eats": filter(sum,eat1=1,true);
+"time_p2_eats": filter(sum,eat2=1,true);
+"time_p3_eats": filter(sum,eat3=1,true);
+"time_p4_eats": filter(sum,eat4=1,true);

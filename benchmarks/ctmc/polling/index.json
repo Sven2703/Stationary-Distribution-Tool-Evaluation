@@ -1,0 +1,438 @@
+{
+	"name": "Cyclic Server Polling System",
+	"stationary-category": "fully-recurrent", "evt-category": "no-transient",
+	"short": "polling",
+	"type": "ctmc",
+	"original": "PRISM",
+	"version": 1,
+	"date": "2018-10-11",
+	"version-history": [
+		{
+			"date": "2018-10-11",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": [
+		"Oliver C. Ibe <oliver_ibe@uml.edu>",
+		"Kishor Trivedi <kst@ee.duke.edu>"
+	],
+	"submitter": "Tim Quatmann <tim.quatmann@cs.rwth-aachen.de>",
+	"source": "https://doi.org/10.1109/49.62852",
+	"part-of": {
+		"name": "the PRISM Benchmark Suite",
+		"url": "http://www.prismmodelchecker.org/benchmarks/"
+	},
+	"description": "This is a PRISM case study [1]. `N´ stations are handled by a polling server, which processes the jobs of the stations with a given rate. See [2] for more details",
+	"references": [
+		"https://doi.org/10.1109/QEST.2012.14",
+		"http://www.prismmodelchecker.org/casestudies/polling.php"
+	],
+	"notes": "PRISM benchmark",
+	"parameters": [
+		{
+			"name": "N",
+			"kind": "file",
+			"description": "Number of stations handled by the server",
+			"type": "positive integer"
+		}
+	],
+	"files": [
+		{
+			"original-file": [
+				"polling.3.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 3
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 36
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.4.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 4
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 96
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.5.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 5
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 240
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.6.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 6
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 576
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.7.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 7
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1344
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.8.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 8
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 3072
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.9.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 9
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 6912
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.10.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 10
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 15360
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.11.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 11
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 33792
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.12.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 12
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 73728
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.13.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 13
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 159744
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.14.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 14
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 344064
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.15.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 15
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 737280
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.16.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 16
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1572864
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.17.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 17
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 3342336
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.18.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 18
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 7077888
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.19.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 19
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 14942208
+						}
+					]
+				}
+			]
+		},
+		{
+			"original-file": [
+				"polling.20.prism"
+			],
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 20
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "storm",
+							"number": 31457280
+						}
+					]
+				}
+			]
+		}
+	]
+}

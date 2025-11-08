@@ -1,0 +1,44 @@
+{
+	"name": "lumbroso",
+	"stationary-category": "singleton-recurrent", "evt-category": "cyclic",
+	"short": "lumbroso",
+	"type": "dtmc",
+	"original": "PRISM",
+    "references": [
+      "https://doi.org/10.48550/arXiv.1304.1916"
+      ],
+	"description": "Fast Dice Roller Algorithm for uniform random sampling using coin flips [J. Lumbroso, arXiv:1304.1916, 2013]",
+    "parameters": [
+		{
+			"name": "N",
+			"kind": "open",
+			"description": "Number of outcomes",
+			"type": "postive integer"
+		}
+	],
+	"properties": ["lumbroso.props"],
+    "files": [
+		{
+			"original-file": [
+				"lumbroso.prism"
+			],
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{"values": [ { "name": "N","value": 128 } ]},
+				{"values": [ { "name": "N","value": 250 } ]},
+				{"values": [ { "name": "N","value": 500 } ]},
+				{"values": [ { "name": "N","value": 1000 } ]},
+				{"values": [ { "name": "N","value": 2000 } ]},
+				{"values": [ { "name": "N","value": 4000 } ]},
+				{"values": [ { "name": "N","value": 8000 } ]},
+				{"values": [ { "name": "N","value": 16000 } ]},
+				{"values": [ { "name": "N","value": 32000 } ]},
+				{"values": [ { "name": "N","value": 64000 } ]},
+				{"values": [ { "name": "N","value": 128000 } ]},
+				{"values": [ { "name": "N","value": 256000 } ]},
+				{"values": [ { "name": "N","value": 512000 } ]},
+				{"values": [ { "name": "N","value": 1024000 } ]}
+			]
+		}
+	]
+}

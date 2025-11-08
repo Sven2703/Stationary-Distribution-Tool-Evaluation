@@ -1,0 +1,149 @@
+{
+	"name": "Embedded Control System",
+	"stationary-category": "singleton-recurrent", "evt-category": "cyclic",
+	"short": "embedded",
+	"type": "ctmc",
+	"original": "PRISM",
+	"version": 1,
+	"date": "2018-10-11",
+	"version-history": [
+		{
+			"date": "2018-10-11",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": [
+		"Jogesh K. Muppala <muppala@cse.ust.hk>",
+		"Gianfranco Ciardo <ciardo@iastate.edu>",
+		"Kishor S. Trivedi <kst@ee.duke.edu>"
+	],
+	"submitter": "Tim Quatmann <tim.quatmann@cs.rwth-aachen.de>",
+	"source": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.16.1102",
+	"part-of": {
+		"name": "the PRISM Benchmark Suite",
+		"url": "http://www.prismmodelchecker.org/benchmarks/"
+	},
+	"description": "This is a PRISM case study [1], closely based on the model in [0]. The system comprises an input processor which reads and processes data from three sensors. It is then polled by a main processor which, in turn, passes instructions to an output processor. The output processor takes the instructions it receives and uses them to control two actuators. A bus connects the three processors together. Each of them can fail and cycles are skipped, which after `MAX_COUNT´ skipped cycles leads to a shut down. See [2] for more details",
+	"references": [
+		"https://doi.org/10.1109/QEST.2012.14",
+		"http://www.prismmodelchecker.org/casestudies/embedded.php"
+	],
+	"notes": "PRISM benchmark",
+	"parameters": [
+		{
+			"name": "MAX_COUNT",
+			"kind": "open",
+			"description": "Limit on allowed number of consecutive cycles skipped",
+			"type": "positive even integer"
+		}
+	],
+	"files": [
+		{
+			"original-file": [
+				"embedded.prism"
+			],
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{
+					"values": [
+						{
+							"name": "MAX_COUNT",
+							"value": 2
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 3478
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "MAX_COUNT",
+							"value": 3
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 4323
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "MAX_COUNT",
+							"value": 4
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 5168
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "MAX_COUNT",
+							"value": 5
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 6013
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "MAX_COUNT",
+							"value": 6
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 6858
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "MAX_COUNT",
+							"value": 7
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 7703
+						}
+]
+				},
+				{
+					"values": [
+						{
+							"name": "MAX_COUNT",
+							"value": 8
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 8548
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,14 @@
+lumbroso	DTMC	PRISM	128	lumbroso.props
+lumbroso	DTMC	PRISM	250	lumbroso.props
+lumbroso	DTMC	PRISM	500	lumbroso.props
+lumbroso	DTMC	PRISM	1000	lumbroso.props
+lumbroso	DTMC	PRISM	2000	lumbroso.props
+lumbroso	DTMC	PRISM	4000	lumbroso.props
+lumbroso	DTMC	PRISM	8000	lumbroso.props
+lumbroso	DTMC	PRISM	16000	lumbroso.props
+lumbroso	DTMC	PRISM	32000	lumbroso.props
+lumbroso	DTMC	PRISM	64000	lumbroso.props
+lumbroso	DTMC	PRISM	128000	lumbroso.props
+lumbroso	DTMC	PRISM	256000	lumbroso.props
+lumbroso	DTMC	PRISM	512000	lumbroso.props
+lumbroso	DTMC	PRISM	1024000	lumbroso.props

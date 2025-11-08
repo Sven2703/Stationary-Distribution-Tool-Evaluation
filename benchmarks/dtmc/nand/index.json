@@ -1,0 +1,292 @@
+{
+	"name": "NAND Multiplexing",
+	"stationary-category": "singleton-recurrent", "evt-category": "acyclic",
+	"short": "nand",
+	"type": "dtmc",
+	"original": "PRISM",
+	"version": 1,
+	"date": "2018-10-11",
+	"version-history": [
+		{
+			"date": "2018-10-11",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": [
+		"Gethin Norman <gethin.norman@glasgow.ac.uk>",
+		"David Parker <d.a.parker@cs.bham.ac.uk>",
+		"Marta Kwiatkowska <Marta.Kwiatkowska@cs.ox.ac.uk>",
+		"Sandeep Shukla <sandeep.shukla1990@gmail.com>"
+	],
+	"submitter": "Michaela Klauck <klauck@depend.uni-saarland.de>",
+	"source": "https://doi.org/10.1109/TCAD.2005.852033",
+	"part-of": {
+		"name": "the PRISM Benchmark Suite",
+		"url": "http://www.prismmodelchecker.org/benchmarks/"
+	},
+	"description": "This PRISM case study [1] concerns NAND multiplexing, a technique for constructing reliable computation from unreliable devices, which means it makes architectures defect-tolerant by using a redundancy technique.  In each multiplexing unit, there are `N´ devices (NAND gates, inputs of each bundle) which in parallel process the copies of the inputs to give `N´ outputs which represent the output of the original processing unit. `K´ is the number of restorative stages. John von Neumann invented this technique. See [2] for more details",
+	"references": [
+		"https://doi.org/10.1109/QEST.2012.14",
+		"http://www.prismmodelchecker.org/casestudies/nand.php"
+	],
+	"notes": "PRISM benchmark",
+	"parameters": [
+		{
+			"name": "N",
+			"kind": "open",
+			"description": "Number of inputs in each bundle",
+			"type": "positive integer"
+		},
+		{
+			"name": "K",
+			"kind": "open",
+			"description": "Number of restorative stages",
+			"type": "positive integer"
+		}
+	],
+	"files": [
+		{
+			"original-file": [
+				"nand.prism"
+			],
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 15
+						},
+						{
+							"name": "K",
+							"value": 2
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 5192
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 20
+						},
+						{
+							"name": "K",
+							"value": 1
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 78332
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 20
+						},
+						{
+							"name": "K",
+							"value": 2
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 154942
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 20
+						},
+						{
+							"name": "K",
+							"value": 3
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 231552
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 20
+						},
+						{
+							"name": "K",
+							"value": 4
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 308162
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 40
+						},
+						{
+							"name": "K",
+							"value": 1
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1004862
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 40
+						},
+						{
+							"name": "K",
+							"value": 2
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 2003082
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 40
+						},
+						{
+							"name": "K",
+							"value": 3
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 3001302
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 40
+						},
+						{
+							"name": "K",
+							"value": 4
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 3999522
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 60
+						},
+						{
+							"name": "K",
+							"value": 1
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 4717592
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 60
+						},
+						{
+							"name": "K",
+							"value": 2
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 9420422
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 60
+						},
+						{
+							"name": "K",
+							"value": 3
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 14123252
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "N",
+							"value": 60
+						},
+						{
+							"name": "K",
+							"value": 4
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 18826082
+						}
+					]
+				}
+			]
+		}
+	]
+}

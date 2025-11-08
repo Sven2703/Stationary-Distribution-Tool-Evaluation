@@ -1,0 +1,16 @@
+Starting benchmarking.
+------------------------------------------------------------
+SLURM JOB NAME: toggle-switch
+SLURM JOB ID: 61739224
+Running on nodes: r23m0089
+Number of CPUs: 1
+Started at Fri Oct 17 02:10:15 PM CEST 2025
+------------------------------------------------------------
+Loaded 19 invocations.
+
+Checking invocations: [                                                  ] 0/19 Checking invocations: [##################################################] 19/19 
+
+Executing invocations: [                                                  ] 0/19 Executing invocations: [#####                                             ] 2/19 Executing invocations: [#######                                           ] 3/19 Executing invocations: [#############                                     ] 5/19 Executing invocations: [###############                                   ] 6/19 Executing invocations: [##################                                ] 7/19 Executing invocations: [#####################                             ] 8/19 Executing invocations: [#######################                           ] 9/19 Executing invocations: [##########################                        ] 10/19 Executing invocations: [############################                      ] 11/19 Executing invocations: [###############################                   ] 12/19 Executing invocations: [##################################                ] 13/19 Executing invocations: [####################################              ] 14/19 Executing invocations: [#######################################           ] 15/19 Executing invocations: [##########################################        ] 16/19 Executing invocations: [############################################      ] 17/19 Executing invocations: [###############################################   ] 18/19 Executing invocations: [##################################################] 19/19 ------------------------------------------------------------
+Finishing at Fri Oct 17 02:10:49 PM CEST 2025
+final spent time is 00:00:34
+------------------------------------------------------------

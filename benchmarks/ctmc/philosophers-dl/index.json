@@ -1,0 +1,59 @@
+{
+	"name": "philosophers-dl",
+	"stationary-category": "singleton-recurrent", "evt-category": "fully-connected",
+	"short": "philosophers-dl",
+	"type": "ctmc",
+	"original": "GreatSPN",
+	"description": "This model is a variant of the classical dining Philosophers problem. There are `N´ philosophers that share `N´ forks. Each philosopher is either thinking or eating. Eating requires two forks. If only the first fork is available, a philosopher graps the first fork and waits for the second one to become free. This eventually results in a deadlock in which all philosophers wait for the second fork to become free. This model is accompanied by GreatSPN [1]",
+	"references": [
+		"https://doi.org/10.1007/978-3-319-30599-8_9"
+	],
+	"parameters": [
+		{
+			"name": "N",
+			"kind": "file",
+			"description": "Number of philosophers",
+			"type": "postive integer"
+		}
+	],
+	"properties": [
+		"philosophers-dl.3.props",
+		"philosophers-dl.4.props",
+		"philosophers-dl.5.props",
+		"philosophers-dl.6.props",
+		"philosophers-dl.7.props",
+		"philosophers-dl.8.props",
+		"philosophers-dl.9.props",
+		"philosophers-dl.10.props",
+		"philosophers-dl.11.props",
+		"philosophers-dl.12.props",
+		"philosophers-dl.13.props",
+		"philosophers-dl.14.props",
+		"philosophers-dl.15.props",
+		"philosophers-dl.16.props",
+		"philosophers-dl.17.props",
+		"philosophers-dl.18.props",
+		"philosophers-dl.19.props",
+		"philosophers-dl.20.props"
+	],
+    "files": [
+		{"converted-file": "philosophers-dl.3.jani", "original-file": ["philosophers-dl.3.PNPRO"], "file-parameter-values": [	{"name": "N","value": 3} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.4.jani", "original-file": ["philosophers-dl.4.PNPRO"], "file-parameter-values": [	{"name": "N","value": 4} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.5.jani", "original-file": ["philosophers-dl.5.PNPRO"], "file-parameter-values": [	{"name": "N","value": 5} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.6.jani", "original-file": ["philosophers-dl.6.PNPRO"], "file-parameter-values": [	{"name": "N","value": 6} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.7.jani", "original-file": ["philosophers-dl.7.PNPRO"], "file-parameter-values": [	{"name": "N","value": 7} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.8.jani", "original-file": ["philosophers-dl.8.PNPRO"], "file-parameter-values": [	{"name": "N","value": 8} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.9.jani", "original-file": ["philosophers-dl.9.PNPRO"], "file-parameter-values": [	{"name": "N","value": 9} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.10.jani", "original-file": ["philosophers-dl.10.PNPRO"], "file-parameter-values": [	{"name": "N","value": 10} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.11.jani", "original-file": ["philosophers-dl.11.PNPRO"], "file-parameter-values": [	{"name": "N","value": 11} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.12.jani", "original-file": ["philosophers-dl.12.PNPRO"], "file-parameter-values": [	{"name": "N","value": 12} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.13.jani", "original-file": ["philosophers-dl.13.PNPRO"], "file-parameter-values": [	{"name": "N","value": 13} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.14.jani", "original-file": ["philosophers-dl.14.PNPRO"], "file-parameter-values": [	{"name": "N","value": 14} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.15.jani", "original-file": ["philosophers-dl.15.PNPRO"], "file-parameter-values": [	{"name": "N","value": 15} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.16.jani", "original-file": ["philosophers-dl.16.PNPRO"], "file-parameter-values": [	{"name": "N","value": 16} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.17.jani", "original-file": ["philosophers-dl.17.PNPRO"], "file-parameter-values": [	{"name": "N","value": 17} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.18.jani", "original-file": ["philosophers-dl.18.PNPRO"], "file-parameter-values": [	{"name": "N","value": 18} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.19.jani", "original-file": ["philosophers-dl.19.PNPRO"], "file-parameter-values": [	{"name": "N","value": 19} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dl.20.jani", "original-file": ["philosophers-dl.20.PNPRO"], "file-parameter-values": [	{"name": "N","value": 20} ],	"open-parameter-values": []}
+	]
+}

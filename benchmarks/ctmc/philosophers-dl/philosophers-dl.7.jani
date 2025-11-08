@@ -1,0 +1,1803 @@
+{
+    "actions": [],
+    "automata": [
+        {
+            "edges": [
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fork1 <- (fork1 - 1)",
+                                    "ref": "fork1",
+                                    "value": {
+                                        "left": "fork1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think1 <- (think1 - 1)",
+                                    "ref": "think1",
+                                    "value": {
+                                        "left": "think1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait1 <- (wait1 + 1)",
+                                    "ref": "wait1",
+                                    "value": {
+                                        "left": "wait1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (think1 >= 1)) & (fork1 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "think1",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork1",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((think1 / 1), (fork1 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "think1",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork1",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat1 <- (eat1 + 1)",
+                                    "ref": "eat1",
+                                    "value": {
+                                        "left": "eat1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork2 <- (fork2 - 1)",
+                                    "ref": "fork2",
+                                    "value": {
+                                        "left": "fork2",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait1 <- (wait1 - 1)",
+                                    "ref": "wait1",
+                                    "value": {
+                                        "left": "wait1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (wait1 >= 1)) & (fork2 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "wait1",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork2",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((wait1 / 1), (fork2 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "wait1",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork2",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat1 <- (eat1 - 1)",
+                                    "ref": "eat1",
+                                    "value": {
+                                        "left": "eat1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork1 <- (fork1 + 1)",
+                                    "ref": "fork1",
+                                    "value": {
+                                        "left": "fork1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork2 <- (fork2 + 1)",
+                                    "ref": "fork2",
+                                    "value": {
+                                        "left": "fork2",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think1 <- (think1 + 1)",
+                                    "ref": "think1",
+                                    "value": {
+                                        "left": "think1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(true & (eat1 >= 1))",
+                        "exp": {
+                            "left": "eat1",
+                            "op": "≥",
+                            "right": 1
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (eat1 / 1))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": "eat1",
+                                "op": "/",
+                                "right": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fork2 <- (fork2 - 1)",
+                                    "ref": "fork2",
+                                    "value": {
+                                        "left": "fork2",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think2 <- (think2 - 1)",
+                                    "ref": "think2",
+                                    "value": {
+                                        "left": "think2",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait2 <- (wait2 + 1)",
+                                    "ref": "wait2",
+                                    "value": {
+                                        "left": "wait2",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (think2 >= 1)) & (fork2 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "think2",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork2",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((think2 / 1), (fork2 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "think2",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork2",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat2 <- (eat2 + 1)",
+                                    "ref": "eat2",
+                                    "value": {
+                                        "left": "eat2",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork3 <- (fork3 - 1)",
+                                    "ref": "fork3",
+                                    "value": {
+                                        "left": "fork3",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait2 <- (wait2 - 1)",
+                                    "ref": "wait2",
+                                    "value": {
+                                        "left": "wait2",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (wait2 >= 1)) & (fork3 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "wait2",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork3",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((wait2 / 1), (fork3 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "wait2",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork3",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat2 <- (eat2 - 1)",
+                                    "ref": "eat2",
+                                    "value": {
+                                        "left": "eat2",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork2 <- (fork2 + 1)",
+                                    "ref": "fork2",
+                                    "value": {
+                                        "left": "fork2",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork3 <- (fork3 + 1)",
+                                    "ref": "fork3",
+                                    "value": {
+                                        "left": "fork3",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think2 <- (think2 + 1)",
+                                    "ref": "think2",
+                                    "value": {
+                                        "left": "think2",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(true & (eat2 >= 1))",
+                        "exp": {
+                            "left": "eat2",
+                            "op": "≥",
+                            "right": 1
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (eat2 / 1))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": "eat2",
+                                "op": "/",
+                                "right": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fork3 <- (fork3 - 1)",
+                                    "ref": "fork3",
+                                    "value": {
+                                        "left": "fork3",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think3 <- (think3 - 1)",
+                                    "ref": "think3",
+                                    "value": {
+                                        "left": "think3",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait3 <- (wait3 + 1)",
+                                    "ref": "wait3",
+                                    "value": {
+                                        "left": "wait3",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (think3 >= 1)) & (fork3 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "think3",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork3",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((think3 / 1), (fork3 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "think3",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork3",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat3 <- (eat3 + 1)",
+                                    "ref": "eat3",
+                                    "value": {
+                                        "left": "eat3",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork4 <- (fork4 - 1)",
+                                    "ref": "fork4",
+                                    "value": {
+                                        "left": "fork4",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait3 <- (wait3 - 1)",
+                                    "ref": "wait3",
+                                    "value": {
+                                        "left": "wait3",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (wait3 >= 1)) & (fork4 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "wait3",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork4",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((wait3 / 1), (fork4 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "wait3",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork4",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat3 <- (eat3 - 1)",
+                                    "ref": "eat3",
+                                    "value": {
+                                        "left": "eat3",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork3 <- (fork3 + 1)",
+                                    "ref": "fork3",
+                                    "value": {
+                                        "left": "fork3",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork4 <- (fork4 + 1)",
+                                    "ref": "fork4",
+                                    "value": {
+                                        "left": "fork4",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think3 <- (think3 + 1)",
+                                    "ref": "think3",
+                                    "value": {
+                                        "left": "think3",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(true & (eat3 >= 1))",
+                        "exp": {
+                            "left": "eat3",
+                            "op": "≥",
+                            "right": 1
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (eat3 / 1))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": "eat3",
+                                "op": "/",
+                                "right": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fork4 <- (fork4 - 1)",
+                                    "ref": "fork4",
+                                    "value": {
+                                        "left": "fork4",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think4 <- (think4 - 1)",
+                                    "ref": "think4",
+                                    "value": {
+                                        "left": "think4",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait4 <- (wait4 + 1)",
+                                    "ref": "wait4",
+                                    "value": {
+                                        "left": "wait4",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (think4 >= 1)) & (fork4 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "think4",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork4",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((think4 / 1), (fork4 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "think4",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork4",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat4 <- (eat4 + 1)",
+                                    "ref": "eat4",
+                                    "value": {
+                                        "left": "eat4",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork5 <- (fork5 - 1)",
+                                    "ref": "fork5",
+                                    "value": {
+                                        "left": "fork5",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait4 <- (wait4 - 1)",
+                                    "ref": "wait4",
+                                    "value": {
+                                        "left": "wait4",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (wait4 >= 1)) & (fork5 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "wait4",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork5",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((wait4 / 1), (fork5 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "wait4",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork5",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat4 <- (eat4 - 1)",
+                                    "ref": "eat4",
+                                    "value": {
+                                        "left": "eat4",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork4 <- (fork4 + 1)",
+                                    "ref": "fork4",
+                                    "value": {
+                                        "left": "fork4",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork5 <- (fork5 + 1)",
+                                    "ref": "fork5",
+                                    "value": {
+                                        "left": "fork5",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think4 <- (think4 + 1)",
+                                    "ref": "think4",
+                                    "value": {
+                                        "left": "think4",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(true & (eat4 >= 1))",
+                        "exp": {
+                            "left": "eat4",
+                            "op": "≥",
+                            "right": 1
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (eat4 / 1))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": "eat4",
+                                "op": "/",
+                                "right": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fork5 <- (fork5 - 1)",
+                                    "ref": "fork5",
+                                    "value": {
+                                        "left": "fork5",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think5 <- (think5 - 1)",
+                                    "ref": "think5",
+                                    "value": {
+                                        "left": "think5",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait5 <- (wait5 + 1)",
+                                    "ref": "wait5",
+                                    "value": {
+                                        "left": "wait5",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (think5 >= 1)) & (fork5 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "think5",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork5",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((think5 / 1), (fork5 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "think5",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork5",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat5 <- (eat5 + 1)",
+                                    "ref": "eat5",
+                                    "value": {
+                                        "left": "eat5",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork6 <- (fork6 - 1)",
+                                    "ref": "fork6",
+                                    "value": {
+                                        "left": "fork6",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait5 <- (wait5 - 1)",
+                                    "ref": "wait5",
+                                    "value": {
+                                        "left": "wait5",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (wait5 >= 1)) & (fork6 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "wait5",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork6",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((wait5 / 1), (fork6 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "wait5",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork6",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat5 <- (eat5 - 1)",
+                                    "ref": "eat5",
+                                    "value": {
+                                        "left": "eat5",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork5 <- (fork5 + 1)",
+                                    "ref": "fork5",
+                                    "value": {
+                                        "left": "fork5",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork6 <- (fork6 + 1)",
+                                    "ref": "fork6",
+                                    "value": {
+                                        "left": "fork6",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think5 <- (think5 + 1)",
+                                    "ref": "think5",
+                                    "value": {
+                                        "left": "think5",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(true & (eat5 >= 1))",
+                        "exp": {
+                            "left": "eat5",
+                            "op": "≥",
+                            "right": 1
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (eat5 / 1))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": "eat5",
+                                "op": "/",
+                                "right": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fork6 <- (fork6 - 1)",
+                                    "ref": "fork6",
+                                    "value": {
+                                        "left": "fork6",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think6 <- (think6 - 1)",
+                                    "ref": "think6",
+                                    "value": {
+                                        "left": "think6",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait6 <- (wait6 + 1)",
+                                    "ref": "wait6",
+                                    "value": {
+                                        "left": "wait6",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (think6 >= 1)) & (fork6 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "think6",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork6",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((think6 / 1), (fork6 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "think6",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork6",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat6 <- (eat6 + 1)",
+                                    "ref": "eat6",
+                                    "value": {
+                                        "left": "eat6",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork7 <- (fork7 - 1)",
+                                    "ref": "fork7",
+                                    "value": {
+                                        "left": "fork7",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait6 <- (wait6 - 1)",
+                                    "ref": "wait6",
+                                    "value": {
+                                        "left": "wait6",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (wait6 >= 1)) & (fork7 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "wait6",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork7",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((wait6 / 1), (fork7 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "wait6",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork7",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat6 <- (eat6 - 1)",
+                                    "ref": "eat6",
+                                    "value": {
+                                        "left": "eat6",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork6 <- (fork6 + 1)",
+                                    "ref": "fork6",
+                                    "value": {
+                                        "left": "fork6",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork7 <- (fork7 + 1)",
+                                    "ref": "fork7",
+                                    "value": {
+                                        "left": "fork7",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think6 <- (think6 + 1)",
+                                    "ref": "think6",
+                                    "value": {
+                                        "left": "think6",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(true & (eat6 >= 1))",
+                        "exp": {
+                            "left": "eat6",
+                            "op": "≥",
+                            "right": 1
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (eat6 / 1))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": "eat6",
+                                "op": "/",
+                                "right": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fork7 <- (fork7 - 1)",
+                                    "ref": "fork7",
+                                    "value": {
+                                        "left": "fork7",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think7 <- (think7 - 1)",
+                                    "ref": "think7",
+                                    "value": {
+                                        "left": "think7",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait7 <- (wait7 + 1)",
+                                    "ref": "wait7",
+                                    "value": {
+                                        "left": "wait7",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (think7 >= 1)) & (fork7 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "think7",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork7",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((think7 / 1), (fork7 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "think7",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork7",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat7 <- (eat7 + 1)",
+                                    "ref": "eat7",
+                                    "value": {
+                                        "left": "eat7",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork1 <- (fork1 - 1)",
+                                    "ref": "fork1",
+                                    "value": {
+                                        "left": "fork1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "wait7 <- (wait7 - 1)",
+                                    "ref": "wait7",
+                                    "value": {
+                                        "left": "wait7",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((true & (wait7 >= 1)) & (fork1 >= 1))",
+                        "exp": {
+                            "left": {
+                                "left": "wait7",
+                                "op": "≥",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "fork1",
+                                "op": "≥",
+                                "right": 1
+                            }
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (min((wait7 / 1), (fork1 / 1))))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": {
+                                    "left": "wait7",
+                                    "op": "/",
+                                    "right": 1
+                                },
+                                "op": "min",
+                                "right": {
+                                    "left": "fork1",
+                                    "op": "/",
+                                    "right": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "eat7 <- (eat7 - 1)",
+                                    "ref": "eat7",
+                                    "value": {
+                                        "left": "eat7",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork1 <- (fork1 + 1)",
+                                    "ref": "fork1",
+                                    "value": {
+                                        "left": "fork1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "fork7 <- (fork7 + 1)",
+                                    "ref": "fork7",
+                                    "value": {
+                                        "left": "fork7",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "think7 <- (think7 + 1)",
+                                    "ref": "think7",
+                                    "value": {
+                                        "left": "think7",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "loc"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(true & (eat7 >= 1))",
+                        "exp": {
+                            "left": "eat7",
+                            "op": "≥",
+                            "right": 1
+                        }
+                    },
+                    "location": "loc",
+                    "rate": {
+                        "comment": "(1 * (eat7 / 1))",
+                        "exp": {
+                            "left": 1.0,
+                            "op": "*",
+                            "right": {
+                                "left": "eat7",
+                                "op": "/",
+                                "right": 1
+                            }
+                        }
+                    }
+                }
+            ],
+            "initial-locations": [
+                "loc"
+            ],
+            "locations": [
+                {
+                    "name": "loc"
+                }
+            ],
+            "name": "gspn_automaton",
+            "variables": []
+        }
+    ],
+    "constants": [],
+    "features": [
+        "derived-operators"
+    ],
+    "jani-version": 1,
+    "name": "philosophers7",
+    "properties": [],
+    "restrict-initial": {
+        "exp": true
+    },
+    "system": {
+        "elements": [
+            {
+                "automaton": "gspn_automaton"
+            }
+        ]
+    },
+    "type": "ctmc",
+    "variables": [
+        {
+            "initial-value": 1,
+            "name": "fork1",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "think1",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "wait1",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "eat1",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "think2",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "wait2",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "eat2",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "think3",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "wait3",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "eat3",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "fork2",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "fork3",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "think4",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "wait4",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "eat4",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "fork4",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "fork5",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "think5",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "wait5",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "eat5",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "think6",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "wait6",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "eat6",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "think7",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "wait7",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 0,
+            "name": "eat7",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "fork6",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "fork7",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 1
+            }
+        }
+    ]
+}

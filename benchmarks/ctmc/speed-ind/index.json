@@ -1,0 +1,38 @@
+{
+	"name": "Genetic Muller C-Element Speed Independent Design",
+	"stationary-category": "fully-recurrent", "evt-category": "no-transient",
+	"short": "speed-ind",
+	"type": "ctmc",
+	"original": "PRISM",
+	"version": 1,
+	"date": "2018-10-26",
+	"version-history": [
+		{
+			"date": "2018-10-26",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": [
+		"Curtis Madsen <ckmadsen@bu.edu>",
+		"Zhen Zhang <zhen.zhang@usu.edu>",
+		"Nicholas Roehner <nicholas.roehner@raytheon.com>",
+		"Chris Winstead <chris.winstead@usu.edu>",
+		"Chris Myers <myers@ece.utah.edu>"
+	],
+	"submitter": "Zhen Zhang <zhen.zhang@usu.edu>",
+	"source": "http://doi.acm.org/10.1145/2644817",
+	"description": "This is a genetic circuit model for the Muller C-element (speed independent design). C-elements are critical state-holding gates commonly used by asynchronous designers to coordinate parallel processes. In a two-input C-element, its output goes high when both inputs are high, goes low when both inputs are low, and retains its previous state when the inputs are mixed. The inputs are IPTG and aTc and the output is GFP.",
+	"references": [],
+	"notes": "biological model",
+	"parameters": [],
+	"files": [
+		{
+			"original-file": [
+				"speed-ind.prism"
+			],
+			"file-parameter-values": [],
+			"open-parameter-values": []
+		}
+	]
+}

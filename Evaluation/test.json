@@ -1,0 +1,68 @@
+[
+	{
+		"benchmark-id": "haddad-monmege.20-0.7",
+		"tool": "prism",
+		"configuration-id": "exact",
+		"solver-id": "default",
+		"export": true,
+		"invocation-note": "Explicit engine and relative error criterion ",
+		"command": "$ARTIFACT_DIR/tools/prism/prism/bin/prism $ARTIFACT_DIR/benchmarks/dtmc/haddad-monmege/haddad-monmege.pm -const N=20,p=0.7 -steadystate -explicit -exact",
+		"time-limit": 1800,
+		"precision": "ignored"
+	},
+	{
+		"benchmark-id": "haddad-monmege.20-0.7",
+		"tool": "prism",
+		"configuration-id": "explicit-rel",
+		"solver-id": "default",
+		"export": true,
+		"invocation-note": "Explicit engine and relative error criterion ",
+		"command": "$ARTIFACT_DIR/tools/prism/prism/bin/prism $ARTIFACT_DIR/benchmarks/dtmc/haddad-monmege/haddad-monmege.pm -const N=20,p=0.7 -steadystate  -explicit -relative  -epsilon 0.001",
+		"time-limit": 1800,
+		"precision": 0.001
+	},
+	{
+		"benchmark-id": "haddad-monmege.20-0.7",
+		"tool": "prism",
+		"configuration-id": "mtbdd-rel",
+		"solver-id": "default",
+		"export": true,
+		"invocation-note": "Explicit engine and relative error criterion ",
+		"command": "$ARTIFACT_DIR/tools/prism/prism/bin/prism $ARTIFACT_DIR/benchmarks/dtmc/haddad-monmege/haddad-monmege.pm -const N=20,p=0.7 -steadystate  -m -relative  -epsilon 0.001",
+		"time-limit": 1800,
+		"precision": 0.001
+	},
+	{
+		"benchmark-id": "haddad-monmege.20-0.7",
+		"tool": "prism",
+		"configuration-id": "sparse-rel",
+		"solver-id": "default",
+		"export": true,
+		"invocation-note": "Explicit engine and relative error criterion ",
+		"command": "$ARTIFACT_DIR/tools/prism/prism/bin/prism $ARTIFACT_DIR/benchmarks/dtmc/haddad-monmege/haddad-monmege.pm -const N=20,p=0.7 -steadystate  -s -relative  -epsilon 0.001",
+		"time-limit": 1800,
+		"precision": 0.001
+	},
+	{
+		"benchmark-id": "haddad-monmege.20-0.7",
+		"tool": "prism",
+		"configuration-id": "hybrid-rel",
+		"solver-id": "default",
+		"export": true,
+		"invocation-note": "Explicit engine and relative error criterion ",
+		"command": "$ARTIFACT_DIR/tools/prism/prism/bin/prism $ARTIFACT_DIR/benchmarks/dtmc/haddad-monmege/haddad-monmege.pm -const N=20,p=0.7 -steadystate  -h -relative  -epsilon 0.001",
+		"time-limit": 1800,
+		"precision": 0.001
+	},
+	{
+		"benchmark-id": "haddad-monmege.20-0.7",
+		"tool": "storm",
+		"configuration-id": "sparse",
+		"solver-id": "classic-luexact-topo",
+		"export": true,
+		"invocation-note": "Sparse (default) engine",
+		"command": "apptainer run -W /opt/storm/build/bin $ARTIFACT_DIR/bin/storm.sif storm --statistics --prism $ARTIFACT_DIR/benchmarks/dtmc/haddad-monmege/haddad-monmege.pm --constants N=20,p=0.7 --buildstateval --steadystate classic --eqsolver topological --topological:eqsolver eigen --eigen:method sparselu --exact --engine sparse --timemem",
+		"time-limit": 1800,
+		"precision": "ignored"
+	}
+]

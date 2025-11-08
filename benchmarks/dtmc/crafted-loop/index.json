@@ -1,0 +1,106 @@
+{
+	"name": "Crafted-Loop",
+	"stationary-category": "fully-recurrent", "evt-category": "no-transient",
+	"short": "crafted-loop",
+	"type": "dtmc",
+	"original": "PRISM",
+    "references": [
+      "https://github.com/incaseoftrouble/stationary-distribution-sampling/tree/master",
+      "https://link.springer.com/chapter/10.1007/978-3-031-30823-9_25"
+      ],
+    "parameters": [
+		{
+			"name": "size",
+			"kind": "open",
+			"description": "Number of states",
+			"type": "postive integer"
+		}
+	],
+    "files": [
+		{
+			"converted-file": "crafted-loop.jani",
+			"original-file": [
+				"crafted-loop.pm"
+			],
+			"conversion": {
+				"tool": "Storm-conv",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-conv --prism crafted-loop.pm --tojani crafted-loop.jani --globalvars"
+			},
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{
+					"values": [
+						{
+							"name": "size",
+							"value": 1000
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1000
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "size",
+							"value": 10000
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 10000
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "size",
+							"value": 100000
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 100000
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "size",
+							"value": 1000000
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1000000
+						}
+					]
+				},
+				{
+					"values": [
+						{
+							"name": "size",
+							"value": 1000000000
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 1000000000
+						}
+					]
+				}
+			]
+		}
+	]
+}

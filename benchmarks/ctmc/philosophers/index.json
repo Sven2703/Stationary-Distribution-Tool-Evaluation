@@ -1,0 +1,224 @@
+{
+	"name": "Dining Philosophers",
+	"short": "philosophers",
+	"type": "ctmc",
+	"original": "GreatSPN",
+	"version": 1,
+	"date": "2018-10-19",
+	"version-history": [
+		{
+			"date": "2018-10-19",
+			"notes": "Initial version.",
+			"version": 1
+		}
+	],
+	"author": "GreatSPN <greatspn@di.unito.it>",
+	"submitter": "Tim Quatmann <tim.quatmann@cs.rwth-aachen.de>",
+	"source": "https://doi.org/10.1007/BF00289519",
+	"description": "This model is a variant of the classical dining Philosophers problem. There are `N´ philosophers that share `N´ forks. Each philosopher is either thinking or eating. Eating requires two forks. If only the first fork is available, a philosopher graps the first fork and waits for the second one to become free. This eventually results in a deadlock in which all philosophers wait for the second fork to become free. This model is accompanied by GreatSPN [1]",
+	"references": [
+		"https://doi.org/10.1007/978-3-319-30599-8_9"
+	],
+	"notes": "small symbolic representation",
+	"parameters": [
+		{
+			"name": "N",
+			"kind": "file",
+			"description": "Number of philosophers",
+			"type": "positive integer"
+		}
+	],
+	"files": [
+		{
+			"converted-file": "philosophers.4.jani",
+			"original-file": [
+				"philosophers.4.PNPRO"
+			],
+			"conversion": {
+				"tool": "Storm-GSPN",
+				"version": "1.2.4 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-gspn --gspnfile philosophers.4.PNPRO --to-jani philosophers.4.jani --capacity 1"
+			},
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 4
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 34
+						}
+					]
+				}
+			]
+		},
+		{
+			"converted-file": "philosophers.12.jani",
+			"original-file": "philosophers.12.PNPRO",
+			"conversion": {
+				"tool": "Storm-GSPN",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-gspn --gspnfile philosophers.12.PNPRO --to-jani philosophers.12.jani --capacity 1"
+			},
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 12
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 39202
+						}
+					]
+				}
+			]
+		},
+		{
+			"converted-file": "philosophers.16.jani",
+			"original-file": "philosophers.16.PNPRO",
+			"conversion": {
+				"tool": "Storm-GSPN",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-gspn --gspnfile philosophers.16.PNPRO --to-jani philosophers.16.jani --capacity 1"
+			},
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 16
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 1331714
+						}
+					]
+				}
+			]
+		},
+		{
+			"converted-file": "philosophers.20.jani",
+			"original-file": "philosophers.20.PNPRO",
+			"conversion": {
+				"tool": "Storm-GSPN",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-gspn --gspnfile philosophers.20.PNPRO --to-jani philosophers.20.jani --capacity 1"
+			},
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 20
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 45239074
+						}
+					]
+				}
+			]
+		},
+		{
+			"converted-file": "philosophers.24.jani",
+			"original-file": "philosophers.24.PNPRO",
+			"conversion": {
+				"tool": "Storm-GSPN",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-gspn --gspnfile philosophers.24.PNPRO --to-jani philosophers.24.jani --capacity 1"
+			},
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 24
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 1536796802
+						}
+					]
+				}
+			]
+		},
+		{
+			"converted-file": "philosophers.28.jani",
+			"original-file": "philosophers.28.PNPRO",
+			"conversion": {
+				"tool": "Storm-GSPN",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-gspn --gspnfile philosophers.28.PNPRO --to-jani philosophers.28.jani --capacity 1"
+			},
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 28
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 52205852194
+						}
+					]
+				}
+			]
+		},
+		{
+			"converted-file": "philosophers.32.jani",
+			"original-file": "philosophers.32.PNPRO",
+			"conversion": {
+				"tool": "Storm-GSPN",
+				"version": "1.8.2 (dev)",
+				"url": "http://www.stormchecker.org",
+				"command": "storm-gspn --gspnfile philosophers.32.PNPRO --to-jani philosophers.32.jani --capacity 1"
+			},
+			"file-parameter-values": [
+				{
+					"name": "N",
+					"value": 32
+				}
+			],
+			"open-parameter-values": [
+				{
+					"values": [],
+					"states": [
+						{
+							"note": "Storm/dd",
+							"number": 1773462177794
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	"name": "philosophers-dlfix",
+	"stationary-category": "fully-recurrent", "evt-category": "no-transient",
+	"short": "philosophers-dlfix",
+	"type": "ctmc",
+	"original": "GreatSPN",
+	"description": "This model is a variant of the classical dining Philosophers problem. There are `N´ philosophers that share `N´ forks. Each philosopher is either thinking or eating. Eating requires two forks. If only the first fork is available, a philosopher graps the first fork and waits for the second one to become free. The first philosopher is 'left-handed', i.e. first graps the fork to their left while all other philosophers pick their right fork first. This modification avoids deadlocks. The model is based on the philosophers model accompanied by GreatSPN [1]",
+	"references": [
+		"https://doi.org/10.1007/978-3-319-30599-8_9"
+	],
+    "parameters": [
+		{
+			"name": "N",
+			"kind": "file",
+			"description": "Number of philosophers",
+			"type": "postive integer"
+		}
+	],
+	"properties": [
+		"philosophers-dlfix.3.props",
+		"philosophers-dlfix.4.props",
+		"philosophers-dlfix.5.props",
+		"philosophers-dlfix.6.props",
+		"philosophers-dlfix.7.props",
+		"philosophers-dlfix.8.props",
+		"philosophers-dlfix.9.props",
+		"philosophers-dlfix.10.props",
+		"philosophers-dlfix.11.props",
+		"philosophers-dlfix.12.props",
+		"philosophers-dlfix.13.props",
+		"philosophers-dlfix.14.props",
+		"philosophers-dlfix.15.props",
+		"philosophers-dlfix.16.props",
+		"philosophers-dlfix.17.props",
+		"philosophers-dlfix.18.props",
+		"philosophers-dlfix.19.props",
+		"philosophers-dlfix.20.props"
+	],
+    "files": [
+		{"converted-file": "philosophers-dlfix.3.jani", "original-file": ["philosophers-dlfix.3.PNPRO"], "file-parameter-values": [	{"name": "N","value": 3} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.4.jani", "original-file": ["philosophers-dlfix.4.PNPRO"], "file-parameter-values": [	{"name": "N","value": 4} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.5.jani", "original-file": ["philosophers-dlfix.5.PNPRO"], "file-parameter-values": [	{"name": "N","value": 5} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.6.jani", "original-file": ["philosophers-dlfix.6.PNPRO"], "file-parameter-values": [	{"name": "N","value": 6} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.7.jani", "original-file": ["philosophers-dlfix.7.PNPRO"], "file-parameter-values": [	{"name": "N","value": 7} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.8.jani", "original-file": ["philosophers-dlfix.8.PNPRO"], "file-parameter-values": [	{"name": "N","value": 8} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.9.jani", "original-file": ["philosophers-dlfix.9.PNPRO"], "file-parameter-values": [	{"name": "N","value": 9} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.10.jani", "original-file": ["philosophers-dlfix.10.PNPRO"], "file-parameter-values": [	{"name": "N","value": 10} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.11.jani", "original-file": ["philosophers-dlfix.11.PNPRO"], "file-parameter-values": [	{"name": "N","value": 11} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.12.jani", "original-file": ["philosophers-dlfix.12.PNPRO"], "file-parameter-values": [	{"name": "N","value": 12} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.13.jani", "original-file": ["philosophers-dlfix.13.PNPRO"], "file-parameter-values": [	{"name": "N","value": 13} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.14.jani", "original-file": ["philosophers-dlfix.14.PNPRO"], "file-parameter-values": [	{"name": "N","value": 14} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.15.jani", "original-file": ["philosophers-dlfix.15.PNPRO"], "file-parameter-values": [	{"name": "N","value": 15} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.16.jani", "original-file": ["philosophers-dlfix.16.PNPRO"], "file-parameter-values": [	{"name": "N","value": 16} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.17.jani", "original-file": ["philosophers-dlfix.17.PNPRO"], "file-parameter-values": [	{"name": "N","value": 17} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.18.jani", "original-file": ["philosophers-dlfix.18.PNPRO"], "file-parameter-values": [	{"name": "N","value": 18} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.19.jani", "original-file": ["philosophers-dlfix.19.PNPRO"], "file-parameter-values": [	{"name": "N","value": 19} ],	"open-parameter-values": []},
+		{"converted-file": "philosophers-dlfix.20.jani", "original-file": ["philosophers-dlfix.20.PNPRO"], "file-parameter-values": [	{"name": "N","value": 20} ],	"open-parameter-values": []}
+	]
+}

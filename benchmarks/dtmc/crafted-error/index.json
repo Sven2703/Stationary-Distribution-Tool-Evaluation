@@ -1,0 +1,53 @@
+{
+	"name": "Crafted-Error",
+	"short": "crafted-error",
+	"type": "dtmc",
+	"original": "PRISM",
+	"version": 1,
+    "references": [
+      "https://github.com/incaseoftrouble/stationary-distribution-sampling/tree/master",
+      "https://link.springer.com/chapter/10.1007/978-3-031-30823-9_25"
+      ],
+    "parameters": [
+		{
+			"name": "e",
+			"kind": "open",
+			"description": "Probability",
+			"type": "double"
+		},
+		{
+			"name": "p",
+			"kind": "open",
+			"description": "Probability",
+			"type": "double"
+		}
+	],
+    "files": [
+		{
+			"original-file": [
+				"crafted-error.pm"
+			],
+			"file-parameter-values": [],
+			"open-parameter-values": [
+				{
+					"values": [
+						{
+							"name": "e",
+							"value": "0.0000001"
+						},
+						{
+							"name": "p",
+							"value": "0.5"
+						}
+					],
+					"states": [
+						{
+							"note": "storm",
+							"number": 4
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,386 @@
+{
+    "actions": [
+        {
+            "name": "loop"
+        },
+        {
+            "name": "step"
+        }
+    ],
+    "automata": [
+        {
+            "edges": [
+                {
+                    "action": "loop",
+                    "destinations": [
+                        {
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(step = steps)",
+                        "exp": {
+                            "left": "step",
+                            "op": "=",
+                            "right": "steps"
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "action": "step",
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "level <- (min((level + 1), levels))",
+                                    "ref": "level",
+                                    "value": {
+                                        "left": {
+                                            "left": "level",
+                                            "op": "+",
+                                            "right": 1
+                                        },
+                                        "op": "min",
+                                        "right": "levels"
+                                    }
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "((p * 2) / 3)",
+                                "exp": {
+                                    "left": {
+                                        "left": "p",
+                                        "op": "*",
+                                        "right": 2
+                                    },
+                                    "op": "/",
+                                    "right": 3
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "level <- (min((level * 2), levels))",
+                                    "ref": "level",
+                                    "value": {
+                                        "left": {
+                                            "left": "level",
+                                            "op": "*",
+                                            "right": 2
+                                        },
+                                        "op": "min",
+                                        "right": "levels"
+                                    }
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "((p * 1) / 3)",
+                                "exp": {
+                                    "left": {
+                                        "left": "p",
+                                        "op": "*",
+                                        "right": 1
+                                    },
+                                    "op": "/",
+                                    "right": 3
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "level <- level",
+                                    "ref": "level",
+                                    "value": "level"
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "(1 - p)",
+                                "exp": {
+                                    "left": 1,
+                                    "op": "-",
+                                    "right": "p"
+                                }
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(step < steps)",
+                        "exp": {
+                            "left": "step",
+                            "op": "<",
+                            "right": "steps"
+                        }
+                    },
+                    "location": "l"
+                }
+            ],
+            "initial-locations": [
+                "l"
+            ],
+            "locations": [
+                {
+                    "name": "l"
+                }
+            ],
+            "name": "level",
+            "variables": []
+        },
+        {
+            "edges": [
+                {
+                    "action": "loop",
+                    "destinations": [
+                        {
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(step = steps)",
+                        "exp": {
+                            "left": "step",
+                            "op": "=",
+                            "right": "steps"
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "action": "step",
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "step <- (step + 1)",
+                                    "ref": "step",
+                                    "value": {
+                                        "left": "step",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(step < steps)",
+                        "exp": {
+                            "left": "step",
+                            "op": "<",
+                            "right": "steps"
+                        }
+                    },
+                    "location": "l"
+                }
+            ],
+            "initial-locations": [
+                "l"
+            ],
+            "locations": [
+                {
+                    "name": "l"
+                }
+            ],
+            "name": "step",
+            "variables": []
+        },
+        {
+            "edges": [
+                {
+                    "action": "loop",
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "loop <- (loop + 1)",
+                                    "ref": "loop",
+                                    "value": {
+                                        "left": "loop",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "(1 / 2)",
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 2
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "loop <- 1",
+                                    "ref": "loop",
+                                    "value": 1
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "(1 / 2)",
+                                "exp": {
+                                    "left": 1,
+                                    "op": "/",
+                                    "right": 2
+                                }
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(loop < loops)",
+                        "exp": {
+                            "left": "loop",
+                            "op": "<",
+                            "right": "loops"
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "action": "loop",
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "loop <- 1",
+                                    "ref": "loop",
+                                    "value": 1
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(loop = loops)",
+                        "exp": {
+                            "left": "loop",
+                            "op": "=",
+                            "right": "loops"
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "action": "step",
+                    "destinations": [
+                        {
+                            "location": "l"
+                        }
+                    ],
+                    "location": "l"
+                }
+            ],
+            "initial-locations": [
+                "l"
+            ],
+            "locations": [
+                {
+                    "name": "l"
+                }
+            ],
+            "name": "loop",
+            "variables": []
+        }
+    ],
+    "constants": [
+        {
+            "name": "p",
+            "type": "real"
+        },
+        {
+            "name": "steps",
+            "type": "int"
+        },
+        {
+            "name": "levels",
+            "type": "int"
+        },
+        {
+            "name": "loops",
+            "type": "int"
+        }
+    ],
+    "features": [
+        "derived-operators"
+    ],
+    "jani-version": 1,
+    "name": "branch",
+    "properties": [],
+    "restrict-initial": {
+        "exp": true
+    },
+    "system": {
+        "elements": [
+            {
+                "automaton": "level"
+            },
+            {
+                "automaton": "step"
+            },
+            {
+                "automaton": "loop"
+            }
+        ],
+        "syncs": [
+            {
+                "result": "loop",
+                "synchronise": [
+                    "loop",
+                    "loop",
+                    "loop"
+                ]
+            },
+            {
+                "result": "step",
+                "synchronise": [
+                    "step",
+                    "step",
+                    "step"
+                ]
+            }
+        ]
+    },
+    "type": "dtmc",
+    "variables": [
+        {
+            "initial-value": 1,
+            "name": "level",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 1,
+                "upper-bound": "levels"
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "step",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 1,
+                "upper-bound": "steps"
+            }
+        },
+        {
+            "initial-value": 1,
+            "name": "loop",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 1,
+                "upper-bound": "loops"
+            }
+        }
+    ]
+}
